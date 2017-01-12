@@ -3,18 +3,20 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
     <!-- 1. relative 2a. linear. 3a. linearleft 3b linear right 2b button-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="#ffe6cc"
+        >
 
-
+        <!--    android:id="@+id/activity_main"-->
         <!-- left branch -->
         <LinearLayout
-            android:id="@+id/activity_main"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -76,9 +78,26 @@
 
         </LinearLayout>
 
-        <!-- right branch -->
+        <!-- left branch -->
         <LinearLayout
             android:id="@+id/activity_main"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            tools:context="com.example.android.courtcounter.MainActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray"
+            android:layout_marginBottom="160dp"></View>
+
+
+
+        </LinearLayout>
+        <!-- right branch -->
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
